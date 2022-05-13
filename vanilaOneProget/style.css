@@ -1,0 +1,33 @@
+body {
+  color: #fff;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+
+}
+
+@keyframes fadein {
+  form {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImages {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: fadein 1s linear;
+}
